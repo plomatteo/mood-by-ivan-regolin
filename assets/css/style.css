@@ -1,0 +1,123 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: questrial;
+  font-size: 17px;
+  position: relative;
+  font-family: questrial;
+  height: 3000px;
+}
+
+.togglericonca{
+  color:#009FE3;
+  font-size:30px;
+  text-shadow: none;
+}
+
+.backgroundColorNav {
+  background-color: black;
+}
+
+.scrollspyHeading {
+    padding-top: 100px;
+  }
+
+#logoivan{
+    width: 150px;
+}
+#h-row-header {
+    height: 200px;
+}
+header {
+  position: relative;
+  background-color: black;
+  height: 55vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow:hidden;
+}
+
+header video {
+  position: absolute;
+  opacity: 0.8;
+  top: 50%;
+  left: 50%;
+  min-width: 200%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+i {
+  font-size: 2.5em;
+}
+#space-between-socialicon {
+  height: 2rem;
+}
+
+#titolo-overlay-home{
+  text-shadow: 2px 1px 10px rgba(0, 0, 0, 1);
+}
+
+#call-to-action {
+  background-color:rgba(36, 173, 59, 0.7);
+  color: white;
+}
+#call-to-action:hover {
+  background-color: rgba(36, 173, 59, 1);
+  
+}
+
+/* Media Query for devices withi coarse pointers and no hover functionality */
+
+/* This will use a fallback image instead of a video for devices that commonly do not support the HTML5 video element */
+
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
+  }
+
+  header video {
+    display: none;
+  }
+}
+
+
+/********** Medium devices only **********/
+@media (min-width: 767px) and (max-width: 991px) {
+  #container-call{
+    text-align: center;
+  }
+}
+/********** Mobile only **********/
+@media (max-width: 767px){
+  header video {
+    min-width: 350%;
+  }
+  #container-call{
+    text-align: center;
+  }
+}
