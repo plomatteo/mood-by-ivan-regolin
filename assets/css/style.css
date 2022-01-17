@@ -11,6 +11,37 @@ body {
   height: 3000px;
 }
 
+.bg-black{
+  height: 100px;
+  background-color: black;
+  color: white;
+}
+
+.bg-palette-009FE3{
+  background-color: #009FE3;
+  color: white;
+  text-align: center;
+  padding: 3rem;
+}
+
+.bg-palette-E6006D{
+  background-color: #E6006D;
+  color: white;
+  text-align: center;
+  padding: 3rem;
+}
+
+.bg-palette-FEFEFE{
+  background-color: #FEFEFE;
+  color: black;
+  text-align: center;
+  padding: 3rem;
+}
+
+.videoprogetti{
+  width: auto;
+  height: auto;
+}
 .togglericonca{
   color:#009FE3;
   font-size:30px;
@@ -20,10 +51,6 @@ body {
 .backgroundColorNav {
   background-color: black;
 }
-
-.scrollspyHeading {
-    padding-top: 100px;
-  }
 
 #logoivan{
     width: 150px;
