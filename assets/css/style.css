@@ -17,6 +17,12 @@ body {
   color: white;
 }
 
+.bg-white{
+  height: 100px;
+  background-color: white;
+  color: black;
+}
+
 .bg-palette-009FE3{
   background-color: #009FE3;
   color: white;
@@ -38,10 +44,6 @@ body {
   padding: 3rem;
 }
 
-.videoprogetti{
-  width: auto;
-  height: auto;
-}
 .togglericonca{
   color:#009FE3;
   font-size:30px;
@@ -62,7 +64,7 @@ header {
   position: relative;
   background-color: black;
   height: 55vh;
-  min-height: 45rem;
+  min-height: 48rem;
   width: 100%;
   overflow:hidden;
 }
@@ -117,6 +119,7 @@ i {
   background-color: rgba(36, 173, 59, 1);
   
 }
+
 
 /* Media Query for devices withi coarse pointers and no hover functionality */
 

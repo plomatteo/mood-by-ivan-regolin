@@ -22,7 +22,7 @@
 
 
 <body data-bs-spy="scroll" data-target="#navbar-mood" data-bs-offset="100">
-  <header style="height: 650px;">
+  <header>
     <nav id="navbar-mood" class="navbar navbar-dark fixed-top navbar-expand-lg shadow-5-strong px-3">
       <div class="container">
         <a class="navbar-brand" href="#"><img src="./assets/img/logoivan.png" alt="logo mood" id="logoivan"></a>
@@ -93,7 +93,7 @@
       </div>
     </div>
     <div class="row mx-auto">
-      <div class="col-lg-8 mx-0 px-0">
+      <div class="col-sm- 12 col-md-6 col-lg-8 order-2 order-md-1 mx-0 px-0">
         <div class="container align-items-center mx-0 px-0">
           <div class="row mx-0 px-0">
             <!-- This div is  intentionally blank. It creates the transparent black overlay over the video which you can modify in the CSS -->
@@ -105,11 +105,8 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-4 mx-0 bg-palette-009FE3">
+      <div class="col-sm-12 col-md-6 col-lg-4 pb-0 order-1 order-md-2 mx-0 bg-palette-009FE3">
         <h4>Video Marketing</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eaque blanditiis et rem. Distinctio sint iste
-          fuga
-          maiores, at voluptate expedita quasi id est dolores nam consequatur magni enim quod.</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eaque blanditiis et rem. Distinctio sint iste
           fuga
           maiores, at voluptate expedita quasi id est dolores nam consequatur magni enim quod.</p>
@@ -117,17 +114,17 @@
     </div>
 
     <div class="row mx-auto">
-      <div class="col-lg-4 mx-0 bg-palette-FEFEFE">
+      <div class="col-sm-12 col-md-6 col-lg-4 mx-0 pb-0  bg-palette-FEFEFE">
         <h4>Wedding</h4>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eaque blanditiis et rem. Distinctio sint iste
           fuga
-          maiores, at voluptate expedita quasi id est dolores nam consequatur magni enim quod.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eaque blanditiis et rem. Distinctio sint iste
-          fuga
-          maiores, at voluptate expedita quasi id est dolores nam consequatur magni enim quod.</p>
+          maiores, at voluptate expedita quasi id est dolores nam consequatur magni enim quod.
+        </p>
+
       </div>
 
-      <div class="col-lg-8 mx-0 px-0">
+      <div class="col-sm- 12 col-md-6 col-lg-8 mx-0 px-0">
+
         <div class="container align-items-center mx-0 px-0">
           <div class="row mx-0 px-0">
             <!-- This div is  intentionally blank. It creates the transparent black overlay over the video which you can modify in the CSS -->
@@ -144,24 +141,21 @@
     <div class="container-fluid px-0 mx-auto">
       <div class="row mx-auto">
 
-        <div class="col-lg-8 mx-0 px-0">
+        <div class="col-sm- 12 col-md-6 col-lg-8 order-2 order-md-1 mx-0 px-0">
           <div class="container align-items-center mx-0 px-0">
-            <div class="row mx-0 px-0">
+            <div class="row mx-0 px-0 contenitorevideoprogetti">
               <!-- This div is  intentionally blank. It creates the transparent black overlay over the video which you can modify in the CSS -->
 
               <!-- The HTML5 video element that will create the background video on the header -->
-              <video playsinline="playsinline" autoplay="autoplay" loop="loop" class="mx-0 px-0">
+              <video playsinline="playsinline" autoplay="autoplay" loop="loop" class="mx-0 px-0 videoprogetti">
                 <source src="./assets/video/luna.mp4" type="video/mp4">
               </video>
             </div>
           </div>
         </div>
 
-        <div class="col-lg-4 mx-0 bg-palette-E6006D">
+        <div class="col-sm-12 col-md-6 col-lg-4 pb-0 order-1 order-md-2 mx-0 bg-palette-E6006D">
           <h4>Video backstage</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eaque blanditiis et rem. Distinctio sint iste
-            fuga
-            maiores, at voluptate expedita quasi id est dolores nam consequatur magni enim quod.</p>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eaque blanditiis et rem. Distinctio sint iste
             fuga
             maiores, at voluptate expedita quasi id est dolores nam consequatur magni enim quod.</p>
@@ -176,17 +170,26 @@
         </div>
       </div>
       <div class="container text-center">
-        <br>
-        <h3>Se i miei progetti ti sono piaciuti non esitare a contattarmi</h3>
+        <div class="row mx-auto align-items-center bg-white">
+          <div class="col text-center align-center">
+            <h4>Se i miei progetti ti sono piaciuti non esitare a contattarmi</h4>
+          </div>
+        </div>
 
         <div class="row">
-          <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          <div class="col-0 col-md-2">
           </div>
-          <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+          <div class="col-12 col-md-8">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+          </div>
+          <div class="col-0 col-md-2">
           </div>
         </div>
       </div>
@@ -204,10 +207,10 @@
         var navmood = $('#navbar-mood');
 
         $(window).scroll(function () {
-          if ($(window).scrollTop() > 200) {
+          if ($(window).scrollTop() > 120) {
             navmood.addClass('backgroundColorNav');
           }
-          if ($(window).scrollTop() < 200) {
+          if ($(window).scrollTop() < 120) {
             navmood.removeClass('backgroundColorNav');
           }
         });
