@@ -9,7 +9,6 @@ body {
   font-size: 17px;
   position: relative;
   font-family: questrial;
-  height: 3000px;
 }
 a{
   text-decoration: none;
@@ -70,9 +69,8 @@ a{
   background-color: black;
 }
 .bg-footer{
+  height: 500px;
   background-image: linear-gradient(to top, #000000, #3b3b3b, #777777, #b9b9b9, #ffffff);
-  height: 350px;
-  padding-top: 130px;
 }
 
 .togglericonca{
