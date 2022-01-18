@@ -16,14 +16,16 @@
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
+  <!-- Animazione CSS -->
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+
   <title>Mood makes video</title>
 
 <body data-bs-spy="scroll" data-target="#navbar-mood" data-bs-offset="100">
   <header>
-    <div data-bs-spy="scroll" data-bs-target="#navbar-mood" data-bs-offset="10" class="scrollspy-example"
-    tabindex="0">
-    <h4 id="Home" class="scrollspyHeading"></h4>
-  </div>
+    <div data-bs-spy="scroll" data-bs-target="#navbar-mood" data-bs-offset="10" class="scrollspy-example" tabindex="0">
+      <h4 id="Home" class="scrollspyHeading"></h4>
+    </div>
     <nav id="navbar-mood" class="navbar navbar-dark fixed-top navbar-expand-lg shadow-5-strong px-3">
       <div class="container align-items-center">
         <a class="navbar-brand" href="#"><img src="./assets/img/logoivan.png" alt="logo mood" id="logoivan"></a>
@@ -58,12 +60,12 @@
       <!-- This div is  intentionally blank. It creates the transparent black overlay over the video which you can modify in the CSS -->
 
       <!-- The HTML5 video element that will create the background video on the header -->
-      <video playsinline="playsinline" autoplay="autoplay" loop="loop">
+      <video playsinline muted autoplay loop>
         <source src="./assets/video/luna.mp4" type="video/mp4">
       </video>
 
       <!-- The header content -->
-      <div class="row rowoverlay d-flex align-items-center">
+      <div class="row rowoverlay d-flex align-items-center reveal">
         <div class="col-10 text-white d-flex flex-column justify-content-center px-0">
           <h2 id="titolo-overlay-home">Pictures and sound in motion</h2>
         </div>
@@ -89,46 +91,47 @@
     <div class="row mx-auto">
       <div class="col-sm- 12 col-md-6 col-lg-8 order-2 order-md-1 mx-0 px-0 bg-video">
         <div class="container-fluid mx-0 px-0">
-          <div class="row mx-0 px-0 py-md-4 py-lg-0">
+          <div class="row mx-0 px-0 py-md-4 py-lg-0 reveal">
             <!-- This div is  intentionally blank. It creates the transparent black overlay over the video which you can modify in the CSS -->
 
             <!-- The HTML5 video element that will create the background video on the header -->
-            <video playsinline="playsinline" autoplay="autoplay" loop="loop" class="mx-0 px-0">
+
+            <video onmouseover="playvid(this)" onmouseleave="pausevid(this)" playsinline muted loop class="mx-0 px-0">
               <source src="./assets/video/luna.mp4" type="video/mp4">
             </video>
           </div>
         </div>
       </div>
       <div class="col-sm-12 col-md-6 col-lg-4 order-1 order-md-2 mx-0 bg-palette-009FE3 d-flex align-items-center">
-        <div>
-        <h4>Video Marketing</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eaque blanditiis et rem. Distinctio sint iste
-          fuga
-          maiores, at voluptate expedita quasi id est dolores nam consequatur magni enim quod.
-        </p>
+        <div class="reveal">
+          <h4>Video Marketing</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eaque blanditiis et rem. Distinctio sint iste
+            fuga
+            maiores, at voluptate expedita quasi id est dolores nam consequatur magni enim quod.
+          </p>
         </div>
       </div>
     </div>
 
     <div class="row mx-auto">
       <div class="col-sm-12 col-md-6 col-lg-4 mx-0 bg-palette-FEFEFE d-flex align-items-center">
-        <div>
-        <h4>Wedding</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eaque blanditiis et rem. Distinctio sint iste
-          fuga
-          maiores, at voluptate expedita quasi id est dolores nam consequatur magni enim quod.
-        </p>
-      </div>
+        <div class="reveal">
+          <h4>Wedding</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eaque blanditiis et rem. Distinctio sint iste
+            fuga
+            maiores, at voluptate expedita quasi id est dolores nam consequatur magni enim quod.
+          </p>
+        </div>
       </div>
 
       <div class="col-sm-12 col-md-6 col-lg-8 mx-0 px-0 bg-video">
 
         <div class="container-fluid align-items-center mx-0 px-0">
-          <div class="row mx-0 px-0 py-md-4 py-lg-0 bg-video">
+          <div class="row mx-0 px-0 py-md-4 py-lg-0 bg-video reveal">
             <!-- This div is  intentionally blank. It creates the transparent black overlay over the video which you can modify in the CSS -->
 
             <!-- The HTML5 video element that will create the background video on the header -->
-            <video playsinline="playsinline" autoplay="autoplay" loop="loop" class="mx-0 px-0">
+            <video onmouseover="playvid(this)" onmouseleave="pausevid(this)" playsinline muted loop class="mx-0 px-0">
               <source src="./assets/video/luna.mp4" type="video/mp4">
             </video>
           </div>
@@ -141,11 +144,11 @@
 
         <div class="col-sm-12 col-md-6 col-lg-8 order-2 order-md-1 mx-0 px-0 bg-video">
           <div class="container-fluid align-items-center mx-0 px-0">
-            <div class="row mx-0 px-0 py-md-4 py-lg-0">
+            <div class="row mx-0 px-0 py-md-4 py-lg-0 reveal">
               <!-- This div is  intentionally blank. It creates the transparent black overlay over the video which you can modify in the CSS -->
 
               <!-- The HTML5 video element that will create the background video on the header -->
-              <video playsinline="playsinline" autoplay="autoplay" loop="loop" class="mx-0 px-0 videoprogetti">
+              <video onmouseover="playvid(this)" onmouseleave="pausevid(this)" playsinline muted loop class="mx-0 px-0">
                 <source src="./assets/video/luna.mp4" type="video/mp4">
               </video>
             </div>
@@ -153,11 +156,12 @@
         </div>
 
         <div class="col-sm-12 col-md-6 col-lg-4 order-1 order-md-2 mx-0 bg-palette-E6006D d-flex align-items-center">
-          <div>
-          <h4>Video backstage</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eaque blanditiis et rem. Distinctio sint iste
-            fuga
-            maiores, at voluptate expedita quasi id est dolores nam consequatur magni enim quod.</p>
+          <div class="reveal">
+            <h4>Video backstage</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis eaque blanditiis et rem. Distinctio sint
+              iste
+              fuga
+              maiores, at voluptate expedita quasi id est dolores nam consequatur magni enim quod.</p>
           </div>
         </div>
       </div>
@@ -215,6 +219,19 @@
           }
         });
       });
+
+      ScrollReveal().reveal('.reveal', { distance: '100px', duration: 1500, easing: 'cubic-bezier(.215, .61, .355, 1)', interval: '600', mobile: false });
+    </script>
+
+    <script>
+      function playvid(e) {
+        e.play();
+      };
+      function pausevid(e) {
+        e.pause();
+        this.currentTime = 0;
+
+      };
     </script>
 </body>
 <footer class="container-fluid bg-footer d-flex flex-column justify-content-end text-white">
