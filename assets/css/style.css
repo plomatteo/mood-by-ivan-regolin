@@ -68,9 +68,68 @@ a{
 .bg-video{
   background-color: black;
 }
+
+.bg-audio-009FE3{
+  background: rgb(0,159,227);
+background: linear-gradient(270deg, rgba(0,159,227,0.5298494397759104) 0%, rgba(0,159,227,0.8183648459383753) 33%, rgba(0,159,227,1) 77%);
+}
+
+.bg-audio-E6006D{
+  background: rgb(230,0,109);
+  background: linear-gradient(90deg, rgba(230,0,109,1) 0%, rgba(230,0,109,0.8435749299719888) 33%, rgba(230,0,109,0.19931722689075626) 77%);
+}
+.bg-audio-FFFFFF{
+background: rgb(255,255,255);
+background: linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 33%, rgba(255,255,255,0.19931722689075626) 77%);
+}
+
+.videoProgetti:hover{
+cursor: pointer;
+padding: 0px;
+}
 .bg-footer{
   height: 500px;
   background-image: linear-gradient(to top, #000000, #3b3b3b, #777777, #b9b9b9, #ffffff);
+}
+
+.contenitoreOuterVideo{
+  position: relative;
+}
+
+.contenitoreInnerVideo{
+  position: absolute;
+}
+
+.containerout{
+  position: relative;
+}
+
+.containerin{
+  position: absolute;
+  width: 100%;
+  height: 3rem;
+  bottom:0;
+  right:0;
+  z-index: 2;
+  padding: 0px;
+}
+
+.iconePlayerVideo{
+  color: white;
+  font-size: 1.8em;
+}
+
+.iconePlayerVideo:hover{
+  cursor: pointer;
+}
+
+.altezzariga{
+  min-height: 540px;
+}
+
+.heightVideoContainer{
+  height: 100%;
+  overflow: hidden;
 }
 
 .togglericonca{
@@ -114,6 +173,19 @@ header video {
 header .container {
   position: relative;
   z-index: 2;
+}
+.video-overlay {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 95%;
+  padding: 5px 5px;
+  font-size: 20px;
+  font-family: Helvetica;
+  color: #FFF;
+  background-color: rgba(50, 50, 50, 0.3);
+  z-index: 1000;
 }
 
 header .overlay {
@@ -182,6 +254,10 @@ i {
   #container-call{
     text-align: center;
   }
+  body{
+    font-size: 16.5px;
+  }
+
 }
 /********** Mobile only **********/
 @media (max-width: 767px){
@@ -192,4 +268,13 @@ i {
   #container-call{
     text-align: center;
   }
+}
+
+
+.hide {
+  visibility: hidden;
+}
+    
+.myDIV:hover+.hide {
+  visibility: visible;
 }
