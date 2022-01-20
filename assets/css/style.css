@@ -107,14 +107,15 @@ padding: 0px;
 .containerin{
   position: absolute;
   width: 100%;
-  height: 3rem;
+  height: 2.5rem;
   bottom:0;
   right:0;
   z-index: 2;
   padding: 0px;
+  opacity: 1;
 }
 
-.iconePlayerVideo{
+.fa-volume-up , .fa-volume-mute{
   color: white;
   font-size: 1.8em;
 }
@@ -270,11 +271,7 @@ i {
   }
 }
 
-
-.hide {
-  visibility: hidden;
-}
-    
-.myDIV:hover+.hide {
-  visibility: visible;
+.fa-play, .fa-pause {
+  font-size: 1.5em;
+  color: white;
 }
