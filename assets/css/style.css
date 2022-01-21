@@ -2,13 +2,11 @@
 margin: 0;
 padding:0;
 }
-
 body {
   margin: 0;
   font-family: questrial;
   font-size: 17px;
   position: relative;
-  font-family: questrial;
 }
 a{
   text-decoration: none;
@@ -194,10 +192,11 @@ i {
   height: 2rem;
 }
 
-.contenitorecolonne{
+.colContainer{
   padding:16px;
 }
-.rowoverlay{
+/*Margin-top & padding hero section overlay*/
+.rowOverlay{
   margin-top: 300px;
   padding: 16px;
 }
@@ -221,20 +220,15 @@ i {
   
 }
 
+/*FOOTER*/
+.linkfooter{
+  color: #009FE3;
+}
 
 /* Media Query for devices withi coarse pointers and no hover functionality */
-
 /* This will use a fallback image instead of a video for devices that commonly do not support the HTML5 video element */
 
-@media (pointer: coarse) and (hover: none) {
-  header {
-    background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;
-  }
 
-  header video {
-    display: none;
-  }
-}
 
 
 /********** Medium devices only **********/
