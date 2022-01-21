@@ -150,6 +150,7 @@ padding: 0px;
 header {
   position: relative;
   background-color: black;
+  width: 100vw;
   height: 100vh;
   min-height: 40rem;
   width: 100%;
@@ -159,10 +160,10 @@ header {
 header video {
   position: absolute;
   opacity: 0.7;
-  top: 85%;
+  top: 50%;
   left: 50%;
   width: auto;
-  height: 135vh;
+  height: 190vh;
   z-index: -1;
   -ms-transform: translateX(-50%) translateY(-50%);
   -moz-transform: translateX(-50%) translateY(-50%);
@@ -237,21 +238,22 @@ i {
 
 
 /********** Medium devices only **********/
-@media (min-width: 1500px) and (max-width: 5000px) {
+@media (min-width: 1500px) {
   header {
     position: relative;
     background-color: black;
     height: 100vh;
     min-height: 40rem;
-    width: auto;
+    width: 100vw;
     overflow:hidden;
   }
 header video {
   position: absolute;
   opacity: 0.7;
-  top: 100%;
+  top: 50%;
   left: 50%;
-  width: 200%;
+  width: auto;
+  height: 230vh;
   z-index: -1;
   -ms-transform: translateX(-50%) translateY(-50%);
   -moz-transform: translateX(-50%) translateY(-50%);
@@ -269,7 +271,7 @@ header video {
   header {
     position: relative;
     background-color: black;
-    height: 100vh;
+    height: 90vh;
     min-height: 40rem;
     width: 100%;
     overflow:hidden;
@@ -278,10 +280,10 @@ header video {
   header video {
     position: absolute;
     opacity: 0.7;
-    top: 100%;
+    top: 50%;
     left: 50%;
     width: auto;
-    height: 140vh;
+    height: 170vh;
     z-index: -1;
     -ms-transform: translateX(-50%) translateY(-50%);
     -moz-transform: translateX(-50%) translateY(-50%);
@@ -312,10 +314,10 @@ header video {
   header video {
     position: absolute;
     opacity: 0.7;
-    top: 70%;
+    top: 38%;
     left: 50%;
     width: auto;
-    height: 120vh;
+    height: 150vh;
     z-index: -1;
     -ms-transform: translateX(-50%) translateY(-50%);
     -moz-transform: translateX(-50%) translateY(-50%);
