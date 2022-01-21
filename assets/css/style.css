@@ -271,7 +271,8 @@ header video {
   header {
     position: relative;
     background-color: black;
-    height: 90vh;
+    height: 100vh;
+    max-height: 900px;
     min-height: 40rem;
     width: 100%;
     overflow:hidden;
