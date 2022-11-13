@@ -4,7 +4,7 @@ padding:0;
 }
 body {
   margin: 0;
-  font-family: questrial;
+  font-family: 'Lato', sans-serif;
   font-size: 17px;
   position: relative;
 }
@@ -15,6 +15,30 @@ i {
   font-size: 2.5em;
 }
 
+h3 {
+  font-size: 28px;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+
+h4 {
+  font-size: 28px;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+
+p {
+  font-weight: 300;
+  font-size: 20px;
+  text-align: left;
+}
+
+button {
+  padding: 10px 30px;
+  border: none;
+  border-radius: 2px;
+}
+
 /*-------------------------START HEADER SECTION---------------------*/
 /*Header*/
 header {
@@ -22,17 +46,15 @@ header {
   background-color: black;
   width: 100vw;
   height: 100vh;
-  min-height: 40rem;
-  width: 100%;
   overflow:hidden;
 }
 header video {
   position: absolute;
   opacity: 0.7;
-  top: 50%;
+  top: 75%;
   left: 50%;
   width: auto;
-  height: 190vh;
+  height: 115vh;
   z-index: -1;
   -ms-transform: translateX(-50%) translateY(-50%);
   -moz-transform: translateX(-50%) translateY(-50%);
@@ -86,7 +108,7 @@ header .overlay {
   text-shadow: none;
 }
 .backgroundColorNav {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 0.75) !important;
 }
 #logoivan{
     width: 150px;
@@ -99,11 +121,28 @@ header .overlay {
   background-color: rgba(36, 173, 59, 1);
 }
 
+/*SUBTITLE*/
+
+.weddings-title {
+  color:#8d744d;
+}
+.aziendale-title{
+  color: #fbddc0;
+}
+.weddings-description{
+}
+.marketing-title {
+  color:#fee7f6;
+}
+
+.marketing-container{
+  z-index: 100;
+}
+
 /*-------------------------START MY WORKS SECTION---------------------*/
 /*Background video*/
 .bg-black{
   height: 100px;
-  background-color: black;
   color: white;
 }
 .bg-white{
@@ -112,19 +151,22 @@ header .overlay {
   color: black;
 }
 .bg-palette-009FE3{
-  background-color: #009FE3;
+  background: rgb(51,105,172);
+  background: radial-gradient(circle, rgba(51,105,172,1) 0%, rgba(48,99,162,1) 70%, rgba(45,92,150,1) 100%);
   color: white;
   text-align: center;
   padding: 2.5rem;
 }
 .bg-palette-E6006D{
-  background-color: #E6006D;
+  background: rgb(150,33,54);
+  background: radial-gradient(circle, rgba(150,33,54,1) 0%, rgba(140,31,51,1) 75%, rgba(128,28,46,1) 100%);
   color: white;
   text-align: center;
   padding: 2.5rem;
 }
 .bg-palette-FEFEFE{
-  background-color: #FEFEFE;
+  background: rgb(255,255,255);
+  background: radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(253,250,242,1) 75%, rgba(254,248,230,1) 100%);
   color: black;
   text-align: center;
   padding: 2.5rem;
@@ -137,22 +179,23 @@ header .overlay {
   padding: 0px;
   }
 
+
 /*PLAYER VIDEO MY WORKS SECTION*/
 /*Background player video*/
 
 .containerout:hover > .bg-audio-009FE3 {
-  background: rgb(0,159,227);
-  background: linear-gradient(270deg, rgba(0,159,227,0.5298494397759104) 0%, rgba(0,159,227,0.8183648459383753) 33%, rgba(0,159,227,1) 77%);
+  background: rgb(45, 92, 150);
+  background: linear-gradient(270deg, rgb(45, 92, 150, 1) 0%, rgba(45, 92, 150,0.8435749299719888) 33%, rgba(45, 92, 150, 0.19931722689075626) 77%);
 }
 
 .containerout:hover > .bg-audio-E6006D{
-  background: rgb(230,0,109);
-  background: linear-gradient(90deg, rgba(230,0,109,1) 0%, rgba(230,0,109,0.8435749299719888) 33%, rgba(230,0,109,0.19931722689075626) 77%);
+  background: rgb(128, 28, 46);
+  background: linear-gradient(270deg, rgb(128, 28, 46, 1) 0%, rgba(128,28,46,0.8435749299719888) 33%, rgba(128,28,46,0.19931722689075626) 77%);
 }
 
 .containerout:hover >  .bg-audio-FFFFFF{
-background: rgb(255,255,255);
-background: linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 33%, rgba(255,255,255,0.19931722689075626) 77%);
+background: rgba(254,248,230,1);
+background: linear-gradient(90deg, rgba(254,248,230,1) 0%, rgba(254,248,230,1) 33%, rgba(254,248,230,0.19931722689075626) 77%);
 }
 /*Overlay player video*/
 .containerout{
@@ -171,7 +214,7 @@ background: linear-gradient(270deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 
 /*Icone player video*/
 .fa-volume-up , .fa-volume-mute{
   color: white;
-  font-size: 1.8em;
+  font-size: 1.6em;
 }
 .fa-play, .fa-pause {
   font-size: 1.5em;
