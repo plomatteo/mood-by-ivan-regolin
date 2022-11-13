@@ -108,7 +108,7 @@ header .overlay {
   text-shadow: none;
 }
 .backgroundColorNav {
-  background-color: rgba(0, 0, 0, 0.75) !important;
+  background-color: rgb(24, 24, 24) !important;
 }
 #logoivan{
     width: 150px;
@@ -129,8 +129,6 @@ header .overlay {
 .aziendale-title{
   color: #fbddc0;
 }
-.weddings-description{
-}
 .marketing-title {
   color:#fee7f6;
 }
@@ -139,9 +137,80 @@ header .overlay {
   z-index: 100;
 }
 
+.aziendale-button{
+  background-color:  #fbddc0;
+  color: rgb(150,33,54);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.weddings-button {
+  position: relative;
+  background-color: #8d744d;
+  color: rgb(254,248,230);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+  border: none;
+  font-size: 18px;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.weddings-button:after {
+  content: "";
+  background-color: #a795774b;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -30px!important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.marketing-button {
+  position: relative;
+  background-color: #fee7f6;
+  border: none;
+  font-size: 18px;
+  color:  rgb(51,105,172);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.marketing-button:after {
+  content: "";
+  background: #fffbfd;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -30px!important;
+  margin-top: -120%;
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.button:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
 /*-------------------------START MY WORKS SECTION---------------------*/
 /*Background video*/
 .bg-black{
+  background-color: rgb(24, 24, 24) !important;
   height: 100px;
   color: white;
 }
@@ -172,7 +241,7 @@ header .overlay {
   padding: 2.5rem;
 }
 .bg-video{
-  background-color: black;
+  background-color: rgb(24, 24, 24);
 }
 .videoMyWorks:hover{
   cursor: pointer;
