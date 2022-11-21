@@ -7,6 +7,9 @@ body {
   font-family: 'Lato', sans-serif;
   font-size: 17px;
   position: relative;
+  background-color: #000000;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 a{
   text-decoration: none;
@@ -44,22 +47,22 @@ button {
 header {
   position: relative;
   background-color: black;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   overflow:hidden;
 }
 header video {
   position: absolute;
   opacity: 0.7;
-  top: 75%;
+  top: 50%;
   left: 50%;
-  width: auto;
-  height: 115vh;
+  min-height: 105vh;
+  min-width: 100vw;
   z-index: -1;
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-40%);
+  -moz-transform: translateX(-50%) translateY(-40%);
+  -webkit-transform: translateX(-50%) translateY(-40%);
+  transform: translateX(-50%) translateY(-40%);
 }
 header .container {
   position: relative;
@@ -78,7 +81,7 @@ header .overlay {
 #title-overlay-home{
   text-shadow: 2px 1px 10px rgba(0, 0, 0, 1);
   font-size: 2em;
-  width: 50%;
+  width: 75%;
   line-height: 1.4;
   letter-spacing: 0.1rem;
 }
@@ -108,7 +111,7 @@ header .overlay {
   text-shadow: none;
 }
 .backgroundColorNav {
-  background-color: rgb(24, 24, 24) !important;
+  background-color: rgba(24, 24, 24, 0.95) !important;
 }
 #logoivan{
     width: 150px;
@@ -186,7 +189,7 @@ header .overlay {
   transition: 0s
 }
 .button:hover{
-  font-size: 20px;
+  font-size: 19px;
 }
 
 /*-------------------------START MY WORKS SECTION---------------------*/
@@ -295,13 +298,13 @@ background: linear-gradient(90deg, rgba(254,248,230,1) 0%, rgba(254,248,230,1) 3
 }
 
 /********** Medium devices only **********/
-@media (min-width: 1500px) {
+@media (min-width: 1440px) {
   header {
     position: relative;
     background-color: black;
     height: 100vh;
-    min-height: 40rem;
-    width: 100vw;
+    max-height: 700px;
+    width: 100%;
     overflow:hidden;
   }
 header video {
@@ -309,13 +312,13 @@ header video {
   opacity: 0.7;
   top: 50%;
   left: 50%;
-  width: auto;
-  height: 230vh;
+  height: 200%;
+  max-width: 1440px;
   z-index: -1;
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-40%);
+  -moz-transform: translateX(-50%) translateY(-40%);
+  -webkit-transform: translateX(-50%) translateY(-40%);
+  transform: translateX(-50%) translateY(-40%);
 }
 }
 @media (min-width: 767px) and (max-width: 991px) {
@@ -329,8 +332,6 @@ header video {
     position: relative;
     background-color: black;
     height: 100vh;
-    max-height: 900px;
-    min-height: 40rem;
     width: 100%;
     overflow:hidden;
   }
@@ -339,13 +340,13 @@ header video {
     opacity: 0.7;
     top: 50%;
     left: 50%;
-    width: auto;
-    height: 170vh;
+    height: 200%;
+    max-width: 1440px;
     z-index: -1;
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-40%);
+    -moz-transform: translateX(-50%) translateY(-40%);
+    -webkit-transform: translateX(-50%) translateY(-40%);
+    transform: translateX(-50%) translateY(-40%);
   }
   .fa-volume-up , .fa-volume-mute{
     font-size: 1.6em;
@@ -356,8 +357,11 @@ header video {
 }
 /********** Mobile only **********/
 @media (max-width: 767px){
-  header video {
-    min-width: 350%;
+  #title-overlay-home{
+    font-size: 1.7em;
+    width: 75%;
+    line-height: 1.4;
+    letter-spacing: 0rem;
   }
   #container-call{
     text-align: center;
@@ -367,27 +371,54 @@ header video {
     background-color: black;
     height: 100vh;
     max-height: 900px;
-    min-height: 40rem;
     width: 100%;
     overflow:hidden;
   }
   header video {
     position: absolute;
     opacity: 0.7;
-    top: 38%;
+    top: 50%;
     left: 50%;
-    width: auto;
-    height: 150vh;
+    height: 200%;
+    max-width: 1440px;
     z-index: -1;
-    -ms-transform: translateX(-50%) translateY(-50%);
-    -moz-transform: translateX(-50%) translateY(-50%);
-    -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-40%);
+    -moz-transform: translateX(-50%) translateY(-40%);
+    -webkit-transform: translateX(-50%) translateY(-40%);
+    transform: translateX(-50%) translateY(-40%);
   }
   .fa-volume-up , .fa-volume-mute{
     font-size: 1.5em;
   }
   .fa-play, .fa-pause {
     font-size: 1.2em;
+  }
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  transition: all 1s;
+}
+.navbar-dark .navbar-nav .nav-link:hover {
+  transition: all 1s;
+  font-size: 18px;
+  margin-top: -2px;
+}
+.nav-pills .nav-link.active {
+  margin-top: -2px;
+  font-size: 18px;
+  transition: all 1s;
+text-decoration: underline 4px #009fe3;
+text-decoration-line: underline;
+text-decoration-thickness: 4px;
+text-decoration-style: initial;
+text-decoration-color: #009fe3;
+}
+
+@media (max-width: 400px){
+  #title-overlay-home{
+    font-size: 1.6em;
+    width: 75%;
+    line-height: 1.4;
+    letter-spacing: 0rem;
   }
 }
